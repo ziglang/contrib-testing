@@ -1,15 +1,10 @@
 const std = @import("std");
 
 pub fn build(b: *std.Build) void {
-    const target = b.standardTargetOptions(.{});
-    const optimize = b.standardOptimizeOption(.{});
+    add(b, "transitive_lib_headers_bug");
+    add(b, "groovebasin");
+}
 
-    b.default_step.dependOn(b.dependency("transitive_lib_headers_bug", .{
-        .target = target,
-        .optimize = optimize,
-    }).builder.default_step);
-
-    b.default_step.dependOn(b.dependency("groovebasin", .{
-        .target = target,
-    }).builder.default_step);
+fn add(b: *std.Build, name: []const u8) void {
+    b.default_step.dependOn(b.dependency(name, .{}).builder.default_step);
 }
