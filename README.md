@@ -48,4 +48,4 @@ and fix regressions in the Zig toolchain before they affect your project.
 Zig developers may decide to remove projects from this repository if
 maintaining them as part of this test suite is deemed not worth the effort. If
 your project is removed at some point, feel free to submit another pull request
-to add it back.
+to add it back after you get it working again.
