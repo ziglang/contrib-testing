@@ -1,0 +1,16 @@
+.{
+    .name = "contrib-testing",
+    .version = "0.0.0",
+    .dependencies = .{
+        .transitive_lib_headers_bug = .{
+            .url = "https://github.com/vesim987/zig-install-headers-bug/archive/124a41795eb97d8a3830b440846c1ac4563fef2c.tar.gz",
+            .hash = "12200bc414a73a5f6fe8e49cc2f4e4eb0b26067f18189ea1a77671243cb0e285325e",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+        "README.md",
+    },
+}
