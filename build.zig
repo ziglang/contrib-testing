@@ -8,4 +8,8 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     }).builder.default_step);
+
+    b.default_step.dependOn(b.dependency("groovebasin", .{
+        .target = target,
+    }).builder.default_step);
 }
