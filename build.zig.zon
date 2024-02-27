@@ -14,6 +14,10 @@
             .url = "https://github.com/andrewrk/nanovg-example/archive/aefa183179579a8f51b5cafcca0592b24dad17f0.tar.gz",
             .hash = "12208d79b10887a893b49fa9d1df5dd7e10d4b47199c6ec02c90a936a8f633a2080d",
         },
+        .package_manager_regression_tests = .{
+            .url = "https://github.com/Cloudef/zig-package-manager-regression-tests/archive/7987ef6c1eeda1f48870e50149480bc3d5257802.tar.gz",
+            .hash = "1220c5a50c21fa35c2d519b8343968202648f955d8611deae758a53ccd0000c8ee37",
+        },
     },
     .paths = .{
         "build.zig",
