@@ -18,6 +18,10 @@
             .url = "https://github.com/Cloudef/zig-package-manager-regression-tests/archive/7987ef6c1eeda1f48870e50149480bc3d5257802.tar.gz",
             .hash = "1220c5a50c21fa35c2d519b8343968202648f955d8611deae758a53ccd0000c8ee37",
         },
+        .tls_conformance = .{
+            .url = "git+https://github.com/jacobly0/tls-conformance.git#1538d80d897f002a91ded95a3f58294bb40ffbf0",
+            .hash = "12203012a78775d7c342953cc75103c91de8c7e6cc5cc31355a1d59a3af6078d2b51",
+        },
     },
     .paths = .{
         "build.zig",
